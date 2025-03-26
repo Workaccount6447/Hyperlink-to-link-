@@ -1,5 +1,3 @@
-
-
 # Use an official Python runtime as a parent image
 FROM python:3.11-slim-bookworm
 
@@ -13,7 +11,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
-COPY . .
+COPY . /Hyperlink-to-link
 
 # Set environment variables (if needed, replace with your actual values)
 ENV BOT_TOKEN="YOUR_BOT_TOKEN"
