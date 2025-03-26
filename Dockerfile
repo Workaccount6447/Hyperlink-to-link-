@@ -1,22 +1,23 @@
-# syntax=docker/dockerfile:1
 
-# Use the official Python image as a base
-FROM python:3.11-slim
+
+# Use an official Python runtime as a parent image
+FROM python:3.11-slim-bookworm
 
 # Set the working directory in the container
-WORKDIR /Hyperlink-to-link-
+WORKDIR /app
 
-# Copy the requirements file
+# Copy the requirements file into the container
 COPY requirements.txt .
 
-# Install dependencies
+# Install any dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of your application files
-COPY . /Hyperlink-to-link-
+# Copy the application code into the container
+COPY . .
 
-# Expose the port your app runs on
-EXPOSE 8000
+# Set environment variables (if needed, replace with your actual values)
+ENV BOT_TOKEN="YOUR_BOT_TOKEN"
+ENV CHANNEL_ID="-1001234567890"  # Example, replace with your actual channel ID
 
-# Command to run your application
-CMD ["python", "app.py"]
+# Command to run the application
+CMD ["python", "your_script_name.py"]  # Replace "your_script_name.py"
