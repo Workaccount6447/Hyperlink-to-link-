@@ -18,4 +18,4 @@ ENV BOT_TOKEN="7140932110:AAES0E-TDdzh0yW-8UTtm52-EADWtkxuawU"
 ENV CHANNEL_ID="-1002357568043" 
 
 # Command to run the application
-CMD ["python", "your_script_name.py"]  # Replace "your_script_name.py"
+CMD ["python", "Link.py"]  # Replace "your_script_name.py"
