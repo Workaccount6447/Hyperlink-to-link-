@@ -14,8 +14,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /Hyperlink-to-link
 
 # Set environment variables (if needed, replace with your actual values)
-ENV BOT_TOKEN="YOUR_BOT_TOKEN"
-ENV CHANNEL_ID="-1001234567890"  # Example, replace with your actual channel ID
+ENV BOT_TOKEN="7140932110:AAES0E-TDdzh0yW-8UTtm52-EADWtkxuawU"
+ENV CHANNEL_ID="-1002357568043"  # Example, replace with your actual channel ID
 
 # Command to run the application
 CMD ["python", "your_script_name.py"]  # Replace "your_script_name.py"
