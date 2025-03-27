@@ -5,7 +5,7 @@ from aiogram import Bot, Dispatcher, Router, types
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(__name__)
 
 # Configuration (Replace with your values)
 BOT_TOKEN = "7140932110:AAES0E-TDdzh0yW-8UTtm52-EADWtkxuawU"
