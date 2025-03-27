@@ -1,20 +1,15 @@
-FROM python:3.11-slim-bookworm
+# Use the official Python image from the Docker Hub
+FROM python:3.9-slim
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements file into the container
-COPY requirements.txt .
+# Copy the requirements file and the bot code into the container
+COPY requirements.txt ./
+COPY Link.py ./
 
-# Install any dependencies specified in requirements.txt
+# Install the required Python packages
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the application code into the container
-COPY . /app  # This copies everything from the current directory to /app in the container
-
-# Set environment variables (if needed, replace with your actual values)
-ENV BOT_TOKEN="7140932110:AAES0E-TDdzh0yW-8UTtm52-EADWtkxuawU"
-ENV CHANNEL_ID="-1002357568043" 
-
-# Command to run the application
-CMD python link.py  # Ensure the filename matches
+# Command to run the bot
+CMD ["python", "Link.py"]
