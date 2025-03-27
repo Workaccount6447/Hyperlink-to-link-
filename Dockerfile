@@ -11,5 +11,7 @@ COPY Link.py ./
 # Install the required Python packages
 RUN pip install --no-cache-dir -r requirements.txt
 
+EXPOSE 8000
+
 # Command to run the bot
 CMD ["python", "Link.py"]
