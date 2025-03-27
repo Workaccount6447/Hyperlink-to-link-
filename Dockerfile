@@ -10,7 +10,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
-COPY . /Hyperlink-to-link- 
+COPY . /Hyperlink-to-link-
 
 # Set environment variables (if needed, replace with your actual values)
 ENV BOT_TOKEN="7140932110:AAES0E-TDdzh0yW-8UTtm52-EADWtkxuawU"
