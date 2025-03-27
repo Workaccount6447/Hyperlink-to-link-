@@ -131,3 +131,11 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+from aiohttp import web
+
+async def health_check(request):
+    return web.Response(text="OK")
+
+app = web.Application()
+app.router.add_get('/health', health_check)
