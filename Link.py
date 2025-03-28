@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configuration (Replace with your values)
-BOT_TOKEN = "Bot Token"
+BOT_TOKEN = "7140932110:AAES0E-TDdzh0yW-8UTtm52-EADWtkxuawU"
 CHANNEL_ID =-1002357568043  # as an integer
 
 # Initialize bot
